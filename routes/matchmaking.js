@@ -25,7 +25,7 @@ app.get(
     );
 
     res.json({
-      serviceUrl: `ws://${config.matchmakerIP}`,
+      serviceUrl: `ws://${config.xmpp.matchmakerIP}:${config.xmpp.port}`,
       ticketType: "mms-player",
       payload: "69=",
       signature: "420=",
@@ -53,29 +53,13 @@ app.get(
       fs.readFileSync("./Config/config.json").toString()
     );
 
-    let gameServerInfo = {
-      serverAddress: "127.0.0.1",
-      serverPort: 7777,
-    };
-
-    try {
-      let calculateIp = config.gameServerIP.split(":")[0];
-      let calculatePort = Number(config.gameServerIP.split(":")[1]);
-
-      if (calculateIp) gameServerInfo.serverAddress = calculateIp;
-      if (Number.isNaN(calculatePort) || !calculatePort)
-        throw new Error("Invalid port.");
-
-      gameServerInfo.serverPort = calculatePort;
-    } catch {}
-
     res.json({
       id: req.params.sessionId,
       ownerId: functions.MakeID().replace(/-/gi, "").toUpperCase(),
       ownerName: "[DS]fortnite-liveeugcec1c2e30ubrcore0a-z8hj-1968",
       serverName: "[DS]fortnite-liveeugcec1c2e30ubrcore0a-z8hj-1968",
-      serverAddress: gameServerInfo.serverAddress,
-      serverPort: gameServerInfo.serverPort,
+      serverAddress: config.gameServerIP,
+      serverPort: config.gameServerPort,
       maxPublicPlayers: 220,
       openPublicPlayers: 175,
       maxPrivatePlayers: 0,
