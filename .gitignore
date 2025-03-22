@@ -1,3 +1,6 @@
 ClientSettings/
 *.Sav
 node_modules/
+package-lock.json
+bun.lockb
+bun.lock

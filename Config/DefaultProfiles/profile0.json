@@ -1522,11 +1522,7 @@
       "mission_alert_redemption_record": {
         "lastClaimTimesMap": {
           "General": {
-            "missionAlertGUIDs": [
-              "",
-              "",
-              ""
-            ],
+            "missionAlertGUIDs": ["", "", ""],
             "lastClaimedTimes": [
               "2016-11-20T21:27:32.998Z",
               "2016-11-20T21:27:32.998Z",
@@ -1534,12 +1530,7 @@
             ]
           },
           "StormLow": {
-            "missionAlertGUIDs": [
-              "",
-              "",
-              "",
-              ""
-            ],
+            "missionAlertGUIDs": ["", "", "", ""],
             "lastClaimedTimes": [
               "2016-11-20T21:27:32.998Z",
               "2016-11-20T21:27:32.998Z",
@@ -1548,18 +1539,7 @@
             ]
           },
           "Halloween": {
-            "missionAlertGUIDs": [
-              "",
-              "",
-              "",
-              "",
-              "",
-              "",
-              "",
-              "",
-              "",
-              ""
-            ],
+            "missionAlertGUIDs": ["", "", "", "", "", "", "", "", "", ""],
             "lastClaimedTimes": [
               "2016-11-20T21:27:32.998Z",
               "2016-11-20T21:27:32.998Z",
@@ -1574,14 +1554,7 @@
             ]
           },
           "Horde": {
-            "missionAlertGUIDs": [
-              "",
-              "",
-              "",
-              "",
-              "",
-              ""
-            ],
+            "missionAlertGUIDs": ["", "", "", "", "", ""],
             "lastClaimedTimes": [
               "2016-11-20T21:27:32.998Z",
               "2016-11-20T21:27:32.998Z",
@@ -1592,18 +1565,7 @@
             ]
           },
           "Storm": {
-            "missionAlertGUIDs": [
-              "",
-              "",
-              "",
-              "",
-              "",
-              "",
-              "",
-              "",
-              "",
-              ""
-            ],
+            "missionAlertGUIDs": ["", "", "", "", "", "", "", "", "", ""],
             "lastClaimedTimes": [
               "2016-11-20T21:27:32.998Z",
               "2016-11-20T21:27:32.998Z",
@@ -1618,13 +1580,7 @@
             ]
           }
         },
-        "oldestClaimIndexForCategory": [
-          0,
-          0,
-          0,
-          0,
-          0
-        ]
+        "oldestClaimIndexForCategory": [0, 0, 0, 0, 0]
       },
       "twitch": {},
       "client_settings": {
@@ -1669,10 +1625,7 @@
       "mode_loadouts": [
         {
           "loadoutName": "Default",
-          "selectedGadgets": [
-            "",
-            ""
-          ]
+          "selectedGadgets": ["", ""]
         }
       ],
       "in_app_purchases": {

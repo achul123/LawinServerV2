@@ -1,4 +1,8 @@
 {
+    "app": {
+        "port": 8080
+    }
+
     "moderators": ["discordId"],
     "discord": {
         "bot_token": ""
