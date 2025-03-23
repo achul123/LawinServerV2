@@ -19,7 +19,7 @@ module.exports = {
   execute: async (interaction) => {
     await interaction.deferReply({ ephemeral: true });
 
-    if (!config.moderators.includes(interaction.user.id))
+    if (!config.discord.moderators.includes(interaction.user.id))
       return interaction.editReply({
         content: "You do not have moderator permissions.",
         ephemeral: true,

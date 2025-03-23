@@ -67,8 +67,8 @@ app
   .listen(PORT, () => {
     log.backend(`App started listening on port ${PORT}`);
 
-    require("./xmpp/xmpp.js");
-    require("./DiscordBot");
+    if (config.xmpp.enabled) require("./xmpp/xmpp.js");
+    if (config.discord.enabled) require("./DiscordBot");
   })
   .on("error", async (err) => {
     if (err.code == "EADDRINUSE") {

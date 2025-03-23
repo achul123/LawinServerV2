@@ -3,12 +3,14 @@
     "port": 8080
   },
   "xmpp": {
+    "enabled": true,
     "matchmakerIP": "127.0.0.1",
     "port": 80
   },
-  "moderators": ["discordId"],
   "discord": {
-    "bot_token": ""
+    "enabled": true,
+    "bot_token": "",
+    "moderators": ["discordId"]
   },
   "mongodb": {
     "database": "mongodb://127.0.0.1/lawindb"
